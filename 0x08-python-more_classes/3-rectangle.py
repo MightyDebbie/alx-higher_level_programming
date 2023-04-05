@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle"""
+"""
+Defines a class Rectangle
+"""
 
 
 class Rectangle:
-    ""represents a rectangle"""
-
+    """Representation of a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes the rectangle"""
         self.width = width
@@ -48,10 +49,3 @@ class Rectangle:
             return 0
         return (self.__width * 2) + (self.__height * 2)
 
-    def __str__(self):
-        """returns printable string representation of the rectangle"""
-        string = ""
-        if self.__width != 0 and self.__height != 0:
-            string += "\n".join("#" * self.__width
-                                for j in range(self.__height))
-        return string
